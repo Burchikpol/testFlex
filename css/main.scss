@@ -1,0 +1,62 @@
+@font-face {
+    font-family: sans-serif;
+    src: url('/fonts/CherrySwash-Regular.ttf');
+    src: url('/fonts/HelveticaLTStd-Bold.otf');
+    src: url('/fonts/HelveticaLTStd-Light.otf');
+    src: url('/fonts/HelveticaLTStd-Roman.otf');
+}
+
+
+
+body {
+    margin: 0;
+    .page {
+        display: flex;
+        .nav {
+            background-color: #4b95a1;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .wrap {
+                width: 1024px;
+                display: flex;
+                justify-content: space-between;
+                .nav__logo {
+                    text-decoration: none;
+                    color: white;
+                    font-family: 'Cherry Swash', cursive;
+                    font-size: 40px;
+                    margin: 30px 0 30px 50px;
+                }
+                .nav-menu {
+                    display: flex;
+                    flex-direction: row;
+                    
+                    li {
+                        list-style-type: none;
+                        display: flex;
+                        align-items: center;
+                        &:not(:last-child):after {
+                            margin-right: 20px;
+                            content: '/';
+                            color: #ffffff;
+                            text-transform: uppercase;
+                            font-family: 'Helvetica LT Condensed', sans-serif;
+                            font-size: 18px;
+                        }
+                        .nav-menu__link {
+                            text-decoration: none;
+                            margin-right: 20px;
+                            color: #ffffff;
+                            text-transform: uppercase;
+                            font-family: 'Helvetica LT Condensed', sans-serif;
+                            font-size: 18px;
+                            flex-wrap: wrap;
+                        }                   
+                        
+                    }
+                }
+            }
+        }
+    }
+}

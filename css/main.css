@@ -1,0 +1,88 @@
+@font-face {
+  font-family: sans-serif;
+  src: url("/fonts/CherrySwash-Regular.ttf");
+  src: url("/fonts/HelveticaLTStd-Bold.otf");
+  src: url("/fonts/HelveticaLTStd-Light.otf");
+  src: url("/fonts/HelveticaLTStd-Roman.otf");
+}
+
+body {
+  margin: 0;
+}
+
+body .page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .page .nav {
+  background-color: #4b95a1;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+body .page .nav .wrap {
+  width: 1024px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+body .page .nav .wrap .nav__logo {
+  text-decoration: none;
+  color: white;
+  font-family: 'Cherry Swash', cursive;
+  font-size: 40px;
+  margin: 30px 0 30px 50px;
+}
+
+body .page .nav .wrap .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+body .page .nav .wrap .nav-menu li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body .page .nav .wrap .nav-menu li:not(:last-child):after {
+  margin-right: 20px;
+  content: '/';
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Helvetica LT Condensed', sans-serif;
+  font-size: 18px;
+}
+
+body .page .nav .wrap .nav-menu li .nav-menu__link {
+  text-decoration: none;
+  margin-right: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Helvetica LT Condensed', sans-serif;
+  font-size: 18px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=main.css.map */
