@@ -172,6 +172,34 @@ body {
             margin-left: 130px; 
         }
     }
-
-
 }
+
+    .page-dhavan {
+        background-color: #00d089;
+        
+        .wrap {
+            display: flex;
+            justify-content: center;
+            padding-top: 95px;
+            
+            .page-dhavan__title {
+                margin-left: 40px;
+                color: #fff;
+                font-family: 'Helvetica LT std', sans-serif;
+                font-size: 26px;
+                text-transform: uppercase;
+                font-weight: 700;
+                position: relative;
+                
+            }
+
+            &:after {
+                content: url('/img/icon/1.png');
+                position: relative;
+                top: 43px;
+                right: 104px;
+                
+            }
+        }
+}
+

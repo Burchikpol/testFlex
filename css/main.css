@@ -206,4 +206,35 @@ body .featured-slider .slick-dots li button {
   margin-left: 130px;
 }
 
+.page-dhavan {
+  background-color: #00d089;
+}
+
+.page-dhavan .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 95px;
+}
+
+.page-dhavan .wrap .page-dhavan__title {
+  margin-left: 40px;
+  color: #fff;
+  font-family: 'Helvetica LT std', sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+}
+
+.page-dhavan .wrap:after {
+  content: url("/img/icon/1.png");
+  position: relative;
+  top: 43px;
+  right: 104px;
+}
+
 /*# sourceMappingURL=main.css.map */
