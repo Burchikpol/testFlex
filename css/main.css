@@ -295,6 +295,8 @@ body .featured-slider .slick-dots li button {
   -ms-flex-pack: center;
   justify-content: center;
   border-radius: 50%;
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
 .page-map .page-map-input .page-map__input {
@@ -307,18 +309,30 @@ body .featured-slider .slick-dots li button {
 
 .page-map .page-map-input .page-map__input::-webkit-input-placeholder {
   padding-left: 17px;
+  color: #d8d8d8;
+  font-family: 'Helvetica LT std', sans-serif;
+  font-size: 14px;
 }
 
 .page-map .page-map-input .page-map__input:-ms-input-placeholder {
   padding-left: 17px;
+  color: #d8d8d8;
+  font-family: 'Helvetica LT std', sans-serif;
+  font-size: 14px;
 }
 
 .page-map .page-map-input .page-map__input::-ms-input-placeholder {
   padding-left: 17px;
+  color: #d8d8d8;
+  font-family: 'Helvetica LT std', sans-serif;
+  font-size: 14px;
 }
 
 .page-map .page-map-input .page-map__input::placeholder {
   padding-left: 17px;
+  color: #d8d8d8;
+  font-family: 'Helvetica LT std', sans-serif;
+  font-size: 14px;
 }
 
 .page-map .page-map-input .page-map__textarea {
@@ -331,19 +345,31 @@ body .featured-slider .slick-dots li button {
 }
 
 .page-map .page-map-input .page-map__textarea::-webkit-input-placeholder {
-  padding-left: 17px;
+  padding: 10px 0 0 17px;
+  color: #d8d8d8;
+  font-family: 'Helvetica LT std', sans-serif;
+  font-size: 14px;
 }
 
 .page-map .page-map-input .page-map__textarea:-ms-input-placeholder {
-  padding-left: 17px;
+  padding: 10px 0 0 17px;
+  color: #d8d8d8;
+  font-family: 'Helvetica LT std', sans-serif;
+  font-size: 14px;
 }
 
 .page-map .page-map-input .page-map__textarea::-ms-input-placeholder {
-  padding-left: 17px;
+  padding: 10px 0 0 17px;
+  color: #d8d8d8;
+  font-family: 'Helvetica LT std', sans-serif;
+  font-size: 14px;
 }
 
 .page-map .page-map-input .page-map__textarea::placeholder {
-  padding-left: 17px;
+  padding: 10px 0 0 17px;
+  color: #d8d8d8;
+  font-family: 'Helvetica LT std', sans-serif;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=main.css.map */
