@@ -128,13 +128,14 @@ body {
                 
                 button {
                     font-size: 0;
-                    width: 14px;
-                    height: 14px;
+                    width: 8px;
+                    height: 8px;
                     background-color: white;
                     border: 1px solid white;
                     margin: 0 10px 0 10px;
                     border-radius: 8px;
                     outline: none;
+                    padding: 0;
                     
                     
                     
@@ -157,21 +158,55 @@ body {
         text-decoration: none;
         top: 280px;
         font-family: 'Helvetica LT std', sans-serif;
+        font-weight: 200;
         font-size: 30px;
         text-align: center;
+        color: #4c505d;
+        margin: 85px 0 0 0;
         
     }
 
     .explore__subtitle {
         max-width: 870px;
         text-align: center;
+        font-family: 'Helvetica LT std', sans-serif;
+        font-weight: 200;
+        font-size: 14px;
+        color: #4c505d;
+        margin: 45px 0 0 0;
     }
 
     .explore-icon {
+        margin-top: 75px;
         img:not(:first-child) {
             margin-left: 130px; 
         }
     }
+}
 
 
+.page-dhavan {
+    background-color: #00d089;   
+    display: flex;
+    justify-content: center;
+    
+    .wrap {
+        display: flex;
+
+        .dhavan__title {
+            font-family: 'Helvetica LT std', sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+            text-transform: uppercase;
+            color: #fff;
+            margin: 0;
+        }
+        .dhavan__subtitle {
+            margin: 0;
+            font-family: 'Helvetica LT std', sans-serif;
+            font-weight: 700;
+            font-size: 339px;
+            color: #fff;
+        }
+    }
 }
