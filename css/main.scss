@@ -154,6 +154,7 @@ body {
     align-items: center;
 
     .explore__title {
+        margin-top: 80px;
         text-decoration: none;
         top: 280px;
         font-family: 'Helvetica LT std', sans-serif;
@@ -168,6 +169,7 @@ body {
     }
 
     .explore-icon {
+        margin-bottom: 80px;
         img:not(:first-child) {
             margin-left: 130px; 
         }
@@ -273,8 +275,41 @@ body {
             }
         }
 
+        button {
+            margin-top: 30px;
+            padding: 0;
+            background: none;
+            border: none;
+            outline:none;
+            
+            .fas.fa-check-circle:before {
+                font-size: 70px;
+                color: #00d089;
+                cursor: pointer;
+            }
+
+            .fas.fa-check-circle:before:hover {
+                color: #00b87a;
+            }
+        }
+
     }
      
 }
 
 
+.copyright {
+    margin-top: 45px;
+    height: 40px;
+    background-color: #00d089;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    p {
+        color: #fff;
+        font-family: 'Helvetica LT std', sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+}
