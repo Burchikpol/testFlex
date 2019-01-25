@@ -6,6 +6,21 @@
     src: url('/fonts/HelveticaLTStd-Roman.otf');
 }
 
+@mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (min-width: 1200px) { @content ; }
+  }
+     
+  @else if $point == mobileonly {
+     @media (max-width: 800px)  { @content ; }
+
+  }
+  @else if $point == mobileonlys {
+     @media (max-width: 570px)  { @content ; }
+
+  }
+}
+
 
 
 body {
@@ -21,21 +36,48 @@ body {
                 width: 1024px;
                 display: flex;
                 justify-content: space-between;
+                
+                @include breakpoint(mobileonly){
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
                 .nav__logo {
                     text-decoration: none;
                     color: white;
                     font-family: 'Cherry Swash', cursive;
                     font-size: 40px;
                     margin: 30px 0 30px 50px;
+                    
+                    @include breakpoint(mobileonly){
+                            font-size: 30px;
+                            margin: 30px 0 10px 0px;
+                        }
                 }
                 .nav-menu {
                     display: flex;
                     flex-direction: row;
                     
+                    @include breakpoint(mobileonly){
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding: 0;
+                            }
+                    
                     li {
                         list-style-type: none;
                         display: flex;
-                        align-items: center;
+                        align-items: center; 
+                        
+                        a {
+                          @include breakpoint(mobileonly){
+                            display: flex;
+                            flex-direction: column;
+                            margin: 10px 0 0 0;
+                            }  
+                        }                   
+                        
                         &:not(:last-child):after {
                             margin-right: 20px;
                             content: '/';
@@ -43,6 +85,10 @@ body {
                             text-transform: uppercase;
                             font-family: 'Helvetica LT Condensed', sans-serif;
                             font-size: 18px;
+                            
+                            @include breakpoint(mobileonly){
+                            display: none;
+                            }
                         }
                         .nav-menu__link {
                             text-decoration: none;
@@ -77,7 +123,13 @@ body {
                 font-family: 'Helvetica LT Condensed', sans-serif;
                 font-size: 44px;
                 text-align: center;
+                
+                @include breakpoint(mobileonlys){
+                            font-size: 30px;
+                        }
             }
+
+
     
             img {
                 width: 100%;
@@ -98,6 +150,10 @@ body {
                 padding: 11px 45px 8px 45px;
                 outline: none;
                 transition: all 0.2s;
+                
+                @include breakpoint(mobileonly){
+                            font-size: 22px;
+                        }
 
                 &:hover {
                     border: 3px solid #afb1b4;
@@ -160,6 +216,7 @@ body {
         font-family: 'Helvetica LT std', sans-serif;
         font-size: 30px;
         text-align: center;
+        padding: 0 15px 0 15px;
         
     }
 
@@ -169,11 +226,15 @@ body {
     }
 
     .explore-icon {
-        margin-bottom: 80px;
-        img:not(:first-child) {
-            margin-left: 130px; 
-        }
-    }
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 15px 0 15px;
+        margin: 60px 0 80px 0;
+        max-width: 440px;
+}
+
+    
 }
 
     .page-dhavan {
