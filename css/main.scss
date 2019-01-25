@@ -6,6 +6,26 @@
     src: url('/fonts/HelveticaLTStd-Roman.otf');
 }
 
+@mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (min-width: 1200px) { @content ; }
+  }
+     
+  @else if $point == mobileonly {
+     @media (max-width: 800px)  { @content ; }
+
+  }
+  @else if $point == mobileonlys {
+     @media (max-width: 570px)  { @content ; }
+
+  }
+  @else if $point == menu {
+     @media (min-width: 801px)  { @content ; }
+
+  }
+}
+
+
 
 
 body {
@@ -21,21 +41,90 @@ body {
                 width: 1024px;
                 display: flex;
                 justify-content: space-between;
+                @include breakpoint(mobileonly){
+                    display: flex;
+                    flex-direction: column !important;
+                }
+
+                .logo-burger {
+                    display: flex;
+                    flex-direction: row;
+
+                    @include breakpoint(mobileonly){
+                        display: flex;
+                        flex-direction: row !important;
+                        justify-content: space-between;
+                        align-items: center;
+                        widows: 100%;
+                    }
+                    
+                
+                
+
+               
+                button {
+                    background: none;
+                    border: none;
+                    
+                    @include breakpoint(menu){
+                            display: none;
+                        }
+                    
+
+                    
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        padding: 20px;
+                    
+                    
+                    }
+                }
+                
+                @include breakpoint(mobileonly){
+                            display: flex;
+                            flex-direction: column;                       
+                            align-items: flex-start;
+                        }
                 .nav__logo {
                     text-decoration: none;
                     color: white;
                     font-family: 'Cherry Swash', cursive;
                     font-size: 40px;
                     margin: 30px 0 30px 50px;
+                    
+                    @include breakpoint(mobileonly){
+                            font-size: 30px;
+                            padding: 10px;
+                            margin: 0;
+                        }
+                    }
                 }
                 .nav-menu {
                     display: flex;
                     flex-direction: row;
                     
+                    @include breakpoint(mobileonly){
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding: 0;
+                            margin-left: 10px;
+                            display: none;
+                            }
+                    
                     li {
                         list-style-type: none;
                         display: flex;
-                        align-items: center;
+                        align-items: center; 
+                        
+                        a {
+                          @include breakpoint(mobileonly){
+                            
+                            margin: 10px 0 0 0 !important;
+                            }  
+                        }                   
+                        
                         &:not(:last-child):after {
                             margin-right: 20px;
                             content: '/';
@@ -43,6 +132,10 @@ body {
                             text-transform: uppercase;
                             font-family: 'Helvetica LT Condensed', sans-serif;
                             font-size: 18px;
+                            
+                            @include breakpoint(mobileonly){
+                            display: none;
+                            }
                         }
                         .nav-menu__link {
                             text-decoration: none;
@@ -77,7 +170,13 @@ body {
                 font-family: 'Helvetica LT Condensed', sans-serif;
                 font-size: 44px;
                 text-align: center;
+                
+                @include breakpoint(mobileonlys){
+                            font-size: 30px;
+                        }
             }
+
+
     
             img {
                 width: 100%;
@@ -98,6 +197,10 @@ body {
                 padding: 11px 45px 8px 45px;
                 outline: none;
                 transition: all 0.2s;
+                
+                @include breakpoint(mobileonly){
+                            font-size: 22px;
+                        }
 
                 &:hover {
                     border: 3px solid #afb1b4;
@@ -155,14 +258,14 @@ body {
     align-items: center;
 
     .explore__title {
+        margin-top: 80px;
         text-decoration: none;
         top: 280px;
         font-family: 'Helvetica LT std', sans-serif;
         font-weight: 200;
         font-size: 30px;
         text-align: center;
-        color: #4c505d;
-        margin: 85px 0 0 0;
+        padding: 0 15px 0 15px;
         
     }
 
@@ -174,15 +277,24 @@ body {
         font-size: 14px;
         color: #4c505d;
         margin: 45px 0 0 0;
+        padding: 0 20px;
     }
 
     .explore-icon {
-        margin-top: 75px;
-        margin-bottom: 85px;
-        img:not(:first-child) {
-            margin-left: 130px; 
-        }
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 15px 0 15px;
+        margin: 60px 0 80px 0;
+        max-width: 440px;
+        
+        @include breakpoint(mobileonly){
+        justify-content: space-around;
     }
+        
+}
+
+    
 }
 
     .page-dhavan {
@@ -226,6 +338,10 @@ body {
                 font-size: 18px;
                 line-height: 200%;
                 text-align: center;
+                
+                @include breakpoint(mobileonly){
+                    padding: 0 15px 20px 15px;
+    }
             }
         }
 }
@@ -249,6 +365,12 @@ body {
     justify-content: center;
     border-radius: 50%;
     box-shadow: 0 0 7px rgba(0,0,0,0.5);
+    
+    @include breakpoint(mobileonly){
+        border-radius: 0;
+        width: 350px;
+        height: 350px;
+    }
     
         .page-map__input {
             border: 1px solid #d8d8d8;
@@ -284,8 +406,42 @@ body {
             }
         }
 
+        button {
+            margin-top: 30px;
+            padding: 0;
+            background: none;
+            border: none;
+            outline:none;
+            
+            .fas.fa-check-circle:before {
+                font-size: 70px;
+                color: #00d089;
+                cursor: pointer;
+            }
+
+            .fas.fa-check-circle:before:hover {
+                color: #00b87a;
+            }
+        }
+
     }
      
 }
 
+
+.copyright {
+    margin-top: 45px;
+    height: 40px;
+    background-color: #00d089;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    p {
+        color: #fff;
+        font-family: 'Helvetica LT std', sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+}
 

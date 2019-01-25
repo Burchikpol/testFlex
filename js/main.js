@@ -4,3 +4,7 @@
       dots: true,
 
    });
+
+   $( ".menu" ).click(function() {
+      $( ".nav-menu" ).slideToggle( "slow" );
+    });
