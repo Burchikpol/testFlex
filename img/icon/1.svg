@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="127" height="92" viewBox="0 0 127 92">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
 <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
+=======
+<svg xmlns="http://www.w3.org/2000/svg" width="127" height="92" viewBox="0 0 127 92">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+>>>>>>> 8a78e49ef10be4a74e0706e7720f6559605f35ef
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <rdf:Description rdf:about=""/>
    </rdf:RDF>
@@ -27,5 +33,21 @@
                                                                                                     
                            
 <?xpacket end="w"?></metadata>
+<<<<<<< HEAD
 <image id="_" data-name="“" width="127" height="92" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAABcCAQAAADtjKIAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjARUWAhLfh4GZAAAC2UlEQVR42u2aPWtUQRSG52pMYQoDRiIYTCq/UMFGbLUIlhairQhWwmIjtgb/gIWVFoLWbhbtREHBD1QwQgIJprDQygRMZFGjcR+LgI26njM358zCzFufffd57p1l7s5uBcEyE9XlOi+3pttgWt/zKfo5p+jnnKKfc4p+zin6Oafo55yin3OKfs4p+jmn6Oecop9zin7OKfo5p+jnnKKfc4p+zin6Ocdav5NasDudtf7n1Ibd6az1bf+ZVZvOWn8ptWF3uqJf9O2ykNqwO10V8yraYUA4Olgtezup6CLq+8OKcPRLJQVZP3kVXczi3yqe/OAtr6J7H/fUJ3+Dtz2tPx+nP9TT+iq6GP2d4snZBPoquhj9MfHkTAJ9FV2M/i7h3Gp4k0BfRRejf0A4N119S6CvolPrsznsE46+9HdX0L0IIebuHw59wskH/voKuodx+kfFk48T6FvTMY0srxPIq+mUd589Yb9wtJVAXk2nXfznxJMJ9I3pGOCTcHHN+bvH0OnufiMMCidv+esb0zHEsvDqdhjxdjen47awHlre8uZ0nBTXg3z3XS95Wzr2siSud9/xjekY5p3i6p5wlrelY5v4WQpgiqjT42h5WzpGmVXUwzFXeVs6xllU1U+6ylvSsYkJOqr6NmNu6rZ0HFF9ptbScJO3pGOEG8orC/DI/OdyezqGucpXdTksssNB3ZKOQ9yMKoefHDdXt6NjC2d5GlW9loum4pZ0nKLJSo1yuG6obk1XqxrgDhsN9a3patbfpd9O3oGuVn3TVt6Brkb9Nctl70QXWb7KBWt1F7qo+o9eJzrmdBH199nuI+9Apyxvc97zQMOcTlXfYtRPXU03GUEnLp+xf65PQCcqn+eM/SaXhO6/5VOc9vkmn4SuS/UPmoz7nty60/1zQV3y294S0v1RPccVDqbWdqP7XdzmHg12pxb2pOsLISyE5+FZeBJeVd9Ty/4lpnS/AExSqmyjBxSeAAAAAElFTkSuQmCC"/>
+=======
+<defs>
+    <style>
+      .cls-1 {
+        font-size: 78px;
+        fill: #fff;
+        text-anchor: middle;
+        font-family: HelveticaLTStd;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+  <text id="_copy" data-name="“ copy" class="cls-1" transform="translate(80.108 -153.851) rotate(180) scale(4.352 4.338)"><tspan x="0">“</tspan></text>
+>>>>>>> 8a78e49ef10be4a74e0706e7720f6559605f35ef
 </svg>
